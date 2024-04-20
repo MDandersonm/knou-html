@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 Document Example</title>
+    <title>KNOU 스포츠 뉴스</title>
     <style>
-
       nav ul {
         padding: 0;
         list-style: none;
@@ -14,35 +13,35 @@
         display: inline-block;
         margin-right: 10px;
       }
-      section {
-        width: 70%; 
-        float: left; 
+      main {
+        width: 70%;
+        float: left;
       }
       aside {
         width: 25%;
-        float: right; 
+        float: right;
         background-color: #ecbdbd;
         padding: 10px;
       }
 
       footer {
-        clear: both; 
-        height:100px;
+        clear: both;
+        height: 100px;
         background-color: lightyellow;
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <header style="background-color: lightyellow; text-align: center;">
-      <h1 style="margin:0; padding:0;">웹페이지</h1>
+    <header style="background-color: lightyellow; text-align: center">
+      <h1 style="margin: 0; padding: 0">KNOU 스포츠 뉴스</h1>
     </header>
 
     <nav>
-      <ul>
-        <li><a href="#section1">HTML</a></li>
-        <li><a href="#section2">CSS</a></li>
-        <li><a href="javascript.html">JAVASCRIPT</a></li>
+      <ul style="margin: 0; padding: 0; background-color: rgb(184, 243, 201)">
+        <li><a href="#section1">축구</a></li>
+        <li><a href="#section2">야구</a></li>
+        <li><a href="#section3">농구</a></li>
         <li>
           <a href="02homework.html" target="view">202434-364652_김영진</a>
         </li>
@@ -50,52 +49,103 @@
     </nav>
     <hr />
     <br />
-
-    <section id="section1">
-      <h2>연예</h2>
-      <article>
-        <h3>김미 아나운서 열애중?</h3>
-        <p style="color: blue; font-weight: bold">
-          This is the content of article 1.
-        </p>
-      </article>
-      <article>
-        <h2>Article 2</h2>
-        <p>This is the content of article 2.</p>
-        <p>
-          Click your
-          <a href="/02homework.html" target="homeworkFrame"
-            >202434-364652_김영진</a
-          >
-          to see an embedded page.
-        </p>
-        <iframe
-          name="homeworkFrame"
-          src="http://www.knou.ac.kr"
-          width="600"
-          height="300"
-        ></iframe>
-
-        <iframe
-          src="http://www.knou.ac.kr"
-          name="view"
-          width="600"
-          height="300"
-          srcdoc="<p> 안녕하세요</p>"
-        ></iframe>
-      </article>
-      <article>
-        <h2>Video Example</h2>
-        <video controls width="450" poster="picture2.jpg">
-          <source src="beutiful.mp4#t=17,20" type="video/mp4" />
-          브라우저가 지원하지않습니다.
-        </video>
-      </article>
-    </section>
-
-    <aside style="background-color: lightpink; padding: 10px">
-      <h2>About</h2>
-      <p>This is an aside element.</p>
+    <main>
+      <section id="section1">
+        <h1 style="color: darkred; font-style: italic">축구</h1>
+        <article style="margin-top: 30px; padding: 20px">
+          <h3>올림픽대표팀, UAE에 1-0 승... 19일 중국과 2차전</h3>
+          <p style="color: blue; font-weight: bold; padding: 20px">
+            10회 연속 올림픽 본선 진출을 노리는 황선홍호가 아랍에미리트(UAE)와의
+            파리올림픽 지역예선 첫 경기에서 어렵사리 승리했다. 황선홍 감독이
+            이끄는 올림픽대표팀은 17일(한국시간) 카타르 도하의 압둘라 빈 할리파
+            스타디움에서 열린 2024 아시아축구연맹(AFC) U-23 아시안컵 조별리그
+            B조 1차전에서 후반 추가시간 터진 이영준(김천상무)의 헤더 결승골에
+            힘입어 UAE를 1-0으로 이겼다. 같은 조의 다른 경기에서는 일본이 중국을
+            1-0으로 이겼다. 한국은 오는 19일 오후 10시 같은 장소에서 중국과
+            2차전을 벌인다.
+          </p>
+        </article>
+        <article style="margin-top: 30px; padding: 20px">
+          <h3>
+            '득점왕' 주민규, 요코하마전 선봉...울산-요코하마 '아마노 더비' 성사
+          </h3>
+          <p style="color: blue; font-weight: bold">
+            아시아 정상을 향해 달려가는 울산HD가 요코하마 F. 마리노스전에 나설
+            11명의 선수를 공개했다. 2022시즌 울산에서 활약한 아마노 준이 선발로
+            나서면서 아마노 더비가 성사됐다. 울산은 17일 오후 7시 울산
+            문수축구경기장에서 요코하마와 2023-24시즌 아시아축구연맹(AFC)
+            챔피언스리그 4강 1차전을 치른다. 이번 대회 토너먼트에서 반포레 고후,
+            전북현대를 꺾고 올라온 울산은 결승 진출을 놓고 요코하마와 격돌하게
+            됐다.
+          </p>
+        </article>
+        <article style="margin-top: 30px; padding: 20px">
+          <h2>창삽입과 비디오재생</h2>
+          <iframe
+            src="http://www.knou.ac.kr"
+            name="view"
+            width="600"
+            height="300"
+            srcdoc="<p> 안녕하세요</p>"
+          ></iframe>
+          <video controls width="450" poster="picture2.jpg">
+            <source src="beutiful.mp4#t=17,20" type="video/mp4" />
+            브라우저가 지원하지않습니다.
+          </video>
+        </article>
+      </section>
+      <section id="section2" style="margin-top: 50px">
+        <h1 style="color: darkred; font-style: italic">야구</h1>
+        <article style="margin-top: 30px; padding: 20px">
+          <h3>
+            류현진 '로드 투 100승' 다음 기회로?… 류현진 복귀 후 '첫 피홈런'으로
+            역전 허용
+          </h3>
+          <p style="color: blue; font-weight: bold">
+            류현진은 17일 창원 NC파크에서 열린 '2024 신한 SOL Bank KBO 리그' NC
+            다이노스와 주중 3연전 두 번째 경기에서 시즌 다섯 번째 선발 등판했다.
+            현재까지 통산 성적은 194경기 99승 54패 1세이브. 이날 승리를
+            추가한다면, 지난 2021년 유희관(두산 베어스 소속) 이후 KBO 리그 역대
+            33번째 100승 고지를 밟을 수 있었다. <br />경기 초반 순항하던 류현진.
+            강력한 투구를 앞세워 NC 타선을 막아냈다. 4회말 대포 한 방에 역전을
+            헌납했다. 4회말 선두타자 서호철에게 중전 안타를 맞았다. 이후
+            손아섭을 1루수 땅볼로 처리했지만, 권희동에게 볼넷을 허용하며 1사
+            1,2루가 됐다. 류현진은 박건우를 스윙삼진으로 잡아 한숨 돌리는
+            듯했지만, 김성욱에게 홈런포를 허용했다.
+          </p>
+        </article>
+      </section>
+      <section id="section3" style="margin-top: 50px">
+        <h1 style="color: darkred; font-style: italic">농구</h1>
+        <article style="margin-top: 30px; padding: 20px">
+          <h3>"삼성, 좋은 문화를 가진 팀으로 만들겠다" 김효범 감독의 다짐</h3>
+          <p style="color: blue; font-weight: bold">
+            김효범 감독이 비로소 삼성의 정식 감독으로 선임됐다. 서울 삼성 썬더스
+            농구단은 17일 김효범 감독을 정식 감독으로 선임했다고 공식 발표했다.
+            지난 2021년 삼성의 코치로 부임한 김 감독은 지난해 12월부터
+            감독대행을 맡아 삼성을 이끌어왔다. 리그 최하위에 머물던 삼성은
+            김효범 감독대행이 지휘봉을 잡은 이후 변화에 성공했다. 특히 정규리그
+            마지막 18경기에서는 9승 9패로 5할 승률을 기록, 상위권 팀들에게도
+            까다로운 '고춧가루 부대'로 변신했다.
+          </p>
+        </article>
+      </section>
+    </main>
+    <aside
+      style="background-color: rgb(184, 243, 201); padding: 10px; height: 500px"
+    >
+      <h2>많이 본 뉴스</h2>
+      <p>1.류현진, 복귀 후 첫 피홈런…NC 김성욱에 역전 스리런포 허용.</p>
+      <p>2.그리운 故 유상철 감독, 울산과 요코하마는 잊지 않았다</p>
+      <p>3.‘삼구삼진’ 이학주 ‘김태형 감독과 벤치서 면담…고개 푹’.</p>
+      <p>
+        4.김유성 잘 싸웠다, 日소프트뱅크 상대 6이닝 4실점 102구 역투…라모스 2G
+        연속 안타.
+      </p>
+      <p>
+        5."KIA가 왜 1등하는지 알겠다" 왜 타이거즈는 끝내기 패에도 적장의 찬사를
+        받았나.
+      </p>
     </aside>
 
     <footer>
