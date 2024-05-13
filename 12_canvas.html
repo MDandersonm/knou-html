@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function func1() {
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        canvas.style.backgroundColor="lightyellow"
+        ctx.lineWidth=10;// 선의 두께
+        ctx.strokeStyle="blue"//선의색상
+        ctx.fillStyle="green"
+        ctx.strokeRect(50,50,100,100);
+        ctx.fillRect(150,150,100,100);
+        ctx.clearRect(100,100,100,100)
+
+        //선그리기
+        ctx.beginPath();
+        ctx.moveTo(50,50);
+        ctx.lineTo(200,200);
+        ctx.stroke();
+        
+
+        ctx.beginPath();
+        ctx.arc(500,100,75,0,90*Math.PI/180,false) // 중심x,y,반지름, 0부터 2파이까지,false(시계방향));
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        //ctx.closePath(); 마지막점과 첫점을 연결
+        //ctx.fill();내부 색상채우기
+        //lineJoin  두선이 만나 꺾이는 모서리모양 지정
+        //lineCap 선의 양쪽 끝부분의 모양 지정
+        
+
+
+        //부채꼴 그리기
+        ctx.beginPath();
+        ctx.moveTo(400,200)
+        ctx.arc(400,200,75,0*Math.PI/180, 90*Math.PI/180,true);
+        // ctx.stroke();
+        ctx.closePath();
+        ctx.stroke();
+
+
+        
+        ctx.beginPath();
+        ctx.lineWidth=10;
+        ctx.setLineDash([1,2,]);
+        ctx.stroke();
+
+        
+
+      }
+    </script>
+  </head>
+  <body onload="func1();">
+    <canvas
+      id="myCanvas"
+      width="700"
+      height="700"
+      style="border: 1px solid red"
+    ></canvas>
+  </body>
+</html>
